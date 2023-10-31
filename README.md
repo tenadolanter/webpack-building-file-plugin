@@ -1,0 +1,2 @@
+# webpack-building-file-plugin
+在Webpack构建过程中的每个模块处理时打印模块的文件路径，对于跟踪Webpack构建过程非常有用
