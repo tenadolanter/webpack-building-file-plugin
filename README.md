@@ -1,6 +1,6 @@
 # webpack-building-file-plugin
 
-在 Webpack 构建过程中的每个模块处理时打印模块的文件路径，对于跟踪 Webpack 构建过程非常有用
+处理模块时打印模块的路径，对于跟踪Webpack构建过程非常有用
 
 ### 安装依赖
 
