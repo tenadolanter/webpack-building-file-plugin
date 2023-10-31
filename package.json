@@ -1,0 +1,19 @@
+{
+  "name": "@tenado/webpack-building-file-plugin",
+  "version": "1.0.2",
+  "description": "处理模块时打印模块的路径，对于跟踪Webpack构建过程非常有用",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenadolanter/webpack-building-file-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tenadolanter/webpack-building-file-plugin/issues"
+  },
+  "homepage": "https://github.com/tenadolanter/webpack-building-file-plugin#readme",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}
