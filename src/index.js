@@ -8,7 +8,7 @@ class BuildingFilePlugin {
     this.options = options;
   }
   apply(compiler) {
-    const { exclude, level, output } = this.options || {};
+    const { exclude, level = "info", output } = this.options || {};
     // 注册插件
     compiler.hooks.compilation.tap("BuildingFilePlugin", (compilation) => {
       compilation.hooks.buildModule.tap("BuildingFilePlugin", (module) => {
