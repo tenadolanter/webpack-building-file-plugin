@@ -13,8 +13,10 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 18
       - run: |
+          node -v
+          npm -v
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git checkout $CI_COMMIT_REF_NAME
@@ -24,6 +26,8 @@ jobs:
           SPACE_CHAR=" "
           npx standard-version --releaseCommitMessageFormat "chore(release):${SPACE_CHAR}{{currentTag}}"
           git push --follow-tags origin $CI_COMMIT_REF_NAME
+          npm ci
+          npm run build
           npm publish --access public
         env:
             NODE_AUTH_TOKEN: ${{secrets.NPM_NODE_AUTH_TOKEN}}
