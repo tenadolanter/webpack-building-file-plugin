@@ -1,6 +1,6 @@
 {
   "name": "@tenado/webpack-building-file-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "在Webpack构建过程中的每个模块处理时打印模块的文件路径，对于跟踪Webpack构建过程非常有用",
   "main": "src/index.js",
   "repository": {
