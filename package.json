@@ -1,6 +1,6 @@
 {
   "name": "@tenado/webpack-building-file-plugin",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "跟踪 Webpack 构建过程，收集使用了哪些文件，用于webpack构建过程的优化",
   "repository": {
     "type": "git",
