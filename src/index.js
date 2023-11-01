@@ -16,13 +16,13 @@ class BuildingFilePlugin {
         if (exclude) {
           if (!exclude.test(module.resource)) {
             if (level === "info") {
-              console.log("Processing file:", module.resource);
+              console.log("正在处理:", module.resource);
             }
             this.fileList.push(module.resource);
           }
         } else {
           if (level === "info") {
-            console.log("Processing file:", module.resource);
+            console.log("正在处理:", module.resource);
           }
           this.fileList.push(module.resource);
         }
@@ -31,7 +31,6 @@ class BuildingFilePlugin {
 
     // 构建结束
     compiler.hooks.afterEmit.tap("BuildingFilePlugin", () => {
-      console.log("构建完成");
       if (output) {
         const configPath = path.join(cwd, output);
         if (!fs.existsSync(configPath)) {

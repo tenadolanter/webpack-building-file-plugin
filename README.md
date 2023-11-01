@@ -1,6 +1,6 @@
 # webpack-building-file-plugin
 
-处理模块时打印模块的路径，对于跟踪Webpack构建过程非常有用
+跟踪 Webpack 构建过程，收集使用了哪些文件，用于webpack构建过程的优化
 
 ### 安装依赖
 
@@ -13,27 +13,25 @@ npm install @tenado/webpack-building-file-plugin -D
 
 ```js
 // webpack.config.js
-const WebpackBuildingFilePlugin = require('@tenado/webpack-building-file-plugin')
+const WebpackBuildingFilePlugin = require("@tenado/webpack-building-file-plugin");
 
 configureWebpack: {
-  plugins: [
-    new WebpackBuildingFilePlugin()
-  ]
+  plugins: [new WebpackBuildingFilePlugin()];
 }
 
 // vue.config.js
-const WebpackBuildingFilePlugin = require('@tenado/webpack-building-file-plugin')
+const WebpackBuildingFilePlugin = require("@tenado/webpack-building-file-plugin");
 module.exports = {
-  configureWebpack:  config => {
+  configureWebpack: (config) => {
     config.plugins.push(new WebpackBuildingFilePlugin());
-  }
-}
+  },
+};
 ```
 
 ### 配置
 
-| 名称    | 类型   | 说明                                       |
-| ------- | ------ | ------------------------------------------ |
-| exclude | RegExp | 需要排除的文件，正则匹配                   |
-| level   | String | 日志的类型，可以为 error info warning none |
-| output  | String | 将文件列表输出成一个文件                   |
+| 名称    | 类型   | 说明                                          |
+| ------- | ------ | --------------------------------------------- |
+| exclude | RegExp | 需要排除的文件，正则匹配                      |
+| level   | String | 日志的类型，可以为 error、info、warning、none |
+| output  | String | 将被使用的文件列收集起来，并保存在文件里面，文件路径    |
