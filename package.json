@@ -1,6 +1,6 @@
 {
   "name": "@tenado/webpack-building-file-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "处理模块时打印模块的路径，对于跟踪Webpack构建过程非常有用",
   "repository": {
     "type": "git",
