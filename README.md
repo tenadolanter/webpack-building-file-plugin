@@ -1,6 +1,6 @@
 # webpack-building-file-plugin
 
-跟踪 Webpack 构建过程，收集使用了哪些文件，用于webpack构建过程的优化
+跟踪 Webpack 构建过程，收集使用了哪些文件，用于 webpack 构建过程的优化
 
 ### 安装依赖
 
@@ -30,8 +30,8 @@ module.exports = {
 
 ### 配置
 
-| 名称    | 类型   | 说明                                          |
-| ------- | ------ | --------------------------------------------- |
-| exclude | RegExp | 需要排除的文件，正则匹配                      |
-| level   | String | 日志的类型，可以为 error、info、warning、none |
-| output  | String | 将被使用的文件列收集起来，并保存在文件里面，文件路径    |
+| 名称    | 类型   | 说明                                                                     |
+| ------- | ------ | ------------------------------------------------------------------------ |
+| exclude | RegExp | 需要排除的文件，正则匹配，例如/node_modules/                             |
+| level   | String | 日志的类型，可以为 error、info、warning、none                            |
+| output  | String | 将被使用的文件列收集起来，并保存在文件里面，文件路径，例如"./output.txt" |
